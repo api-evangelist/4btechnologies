@@ -1,0 +1,77 @@
+generated: '2026-09-05'
+method: probed
+source: https://businessleadsworld.com/
+name: Business Leads World — well-known discovery probe
+description: >-
+  Probe of the RFC 8615 /.well-known/ namespace on every host this record knows. The company runs a
+  single web property, businessleadsworld.com, served as a client-rendered React single-page app: the
+  origin answers HTTP 200 with the same 2,000-byte HTML shell for EVERY path, including paths that do
+  not exist. No probed path returned a real document, so no WellKnown, SecurityTxt or AgentCard
+  pointer is emitted — the 200s are single-page-app catch-alls, not published documents.
+hosts:
+- host: businessleadsworld.com
+  note: >-
+    Apex host, React SPA. Every /.well-known/* path returns HTTP 200 with the identical
+    2,000-byte index.html shell (title "Exclusive MCA Leads with Bank Statement for Funding
+    Business"), so every result below is a MISS recorded as a soft-200, not a served document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    result: miss
+    note: SPA HTML shell (text/html, 2000 bytes), not RFC 9116 text.
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    result: miss
+    note: SPA HTML shell, not JSON.
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    result: miss
+    note: SPA HTML shell, not JSON.
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    result: miss
+    note: SPA HTML shell, not an RFC 9727 linkset.
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    result: miss
+    note: SPA HTML shell, not JSON.
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    result: miss
+    note: SPA HTML shell, not an A2A AgentCard. No agent card is published.
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    result: miss
+    note: SPA HTML shell (legacy pre-0.3 A2A path). No agent card is published.
+other_machine_readable_surfaces:
+- path: /llms.txt
+  status: 200
+  content_type: text/plain
+  bytes: 15740
+  result: hit
+  saved: llms/4btechnologies-llms.txt
+  note: >-
+    A real, provider-authored llms.txt covering services, company pages and the blog. It documents
+    no API, no endpoint and no developer program.
+- path: /robots.txt
+  status: 200
+  content_type: text/plain
+  bytes: 1634
+  result: hit
+  note: >-
+    Explicitly Allow-lists 20 named AI/LLM crawlers (GPTBot, ClaudeBot, anthropic-ai, Google-Extended,
+    PerplexityBot, MistralBot and others) and disallows AdsBot plus /admin/, /checkout/, /login/,
+    /register/ and /edit-leads/. Two of the trailing Disallow lines are malformed (missing the colon).
+- path: /sitemap.xml
+  status: 200
+  content_type: application/xml
+  bytes: 6307
+  result: hit
+  note: 35 URLs. No developer, API, docs or reference page among them.

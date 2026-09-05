@@ -1,0 +1,36 @@
+generated: '2026-09-05'
+method: searched
+source: https://businessleadsworld.com/pricing/
+name: Business Leads World — plans and pricing
+plan_count: 0
+note: >-
+  Business Leads World publishes NO API plans, because it publishes no API. Its /pricing/ page is a
+  self-service storefront for LEAD DATA, not for API access: the catalogue of lead lists is loaded at
+  runtime from the site's own application backend and priced per record, with a stated minimum order
+  of $500 per checkout ("Minimum purchase amount is $500"). The site's embedded schema.org Product
+  markup advertises a single Offer of USD 45 (priceCurrency USD, price "45", availability InStock) on
+  the homepage and on the MCA live-transfer leads page — a per-lead indicative price, not a plan tier.
+  There are no named tiers, no included quota, no overage rate and no subscription. plan_count is 0
+  rather than omitted so the absence is recorded rather than inferred.
+pricing_model:
+  type: per-record marketplace
+  currency: USD
+  minimum_order_usd: 500
+  indicative_unit_price_usd: 45
+  indicative_unit_price_source: >-
+    schema.org Offer embedded in the site JS bundle for the MCA Live Transfer Leads product
+    (https://businessleadsworld.com/mca-live-transfer-leads/)
+  tiers_published: false
+  subscription: false
+  api_access_priced: false
+plans: []
+evidence:
+- url: https://businessleadsworld.com/pricing/
+  status: 200
+  note: >-
+    Client-rendered SPA route; the served HTML is a 2,000-byte shell. Pricing behaviour was read from
+    the site's own JavaScript bundle at /assets/index-DZAi2ccB.js (HTTP 200, 961,463 bytes) and from
+    the catalogue endpoint the bundle calls.
+- url: https://businessleadsworld.com/mca-leads-cost/
+  status: 200
+  note: Provider's own published article on MCA lead cost, listed in llms.txt and sitemap.xml.

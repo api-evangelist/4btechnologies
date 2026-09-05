@@ -1,0 +1,20 @@
+generated: '2026-09-05'
+method: searched
+source: https://businessleadsworld.com/llms.txt
+name: Business Leads World — rate limits
+limit_count: 0
+note: >-
+  No rate limits are published, because no API is published. Business Leads World has no developer
+  portal, no API reference and no machine-readable contract; the only HTTP surface is the private
+  backend of its own storefront SPA, which is undocumented and returns no RateLimit-*, X-RateLimit-*
+  or Retry-After headers on the unauthenticated responses observed. limit_count is 0 as an honest
+  recorded zero, not an omission.
+rate_limits: []
+headers_observed: []
+evidence:
+- url: https://businessleadsworld.com/llms.txt
+  status: 200
+  note: Provider-authored llms.txt; enumerates services, company pages and blog only — no API section.
+- url: https://businessleadsworld.com/sitemap.xml
+  status: 200
+  note: 35 URLs, none of which is a developer, API or documentation page.

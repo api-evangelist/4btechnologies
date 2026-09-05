@@ -1,7 +1,15 @@
 aid: 4btechnologies
 name: Business Leads World
-description: 'Business Leads World is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Business Leads World is a US lead-generation and B2B data company serving the alternative
+  business-finance market. Operating since 2016 from Queens, New York, it supplies merchant cash
+  advance (MCA) and business loan leads to lenders, ISOs, funding companies and loan brokers —
+  MCA live-transfer calls, call-back leads, aged MCA leads, business loan leads, digital marketing
+  leads and B2B email data. Leads are sourced through SEO, PPC and email marketing and pre-qualified
+  against published criteria (credit score above 550, no bankruptcies, at least one year in business,
+  and monthly bank deposits above $15,000). The company sells lead lists through a self-service
+  storefront on its own website; it publishes no public developer program, API reference or
+  machine-readable API contract.
 url: https://raw.githubusercontent.com/api-evangelist/4btechnologies/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +20,12 @@ created: '2026-09-05'
 modified: '2026-09-05'
 tags:
 - Company
+- Lead Generation
+- Merchant Cash Advance
+- Business Lending
+- B2B Data
+- Marketing
+- Financial Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +33,57 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/4btechnologies-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/4btechnologies
+  url: https://businessleadsworld.com/
+- type: About
+  url: https://businessleadsworld.com/about-us/
+- type: Blog
+  url: https://businessleadsworld.com/blogs/
+- type: Pricing
+  url: https://businessleadsworld.com/pricing/
+- type: Support
+  url: https://businessleadsworld.com/contact/
+- type: SignUp
+  url: https://businessleadsworld.com/register/
+- type: Login
+  url: https://businessleadsworld.com/login/
+- type: PrivacyPolicy
+  url: https://businessleadsworld.com/privacy-policy/
+- type: TermsOfService
+  url: https://businessleadsworld.com/terms-of-service/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/businessleadsworld
+- type: LLMsTxt
+  url: llms/4btechnologies-llms.txt
+- type: Plans
+  url: plans/4btechnologies-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/4btechnologies-rate-limits.yml
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Business Leads World sells MCA and business-loan lead lists, not software: businessleadsworld.com
+    is a React single-page storefront whose only HTTP backend is an undocumented private endpoint at
+    https://api.expertdesignhub.com/blw (its web agency's shared host, Bearer token from browser
+    localStorage), and neither the site, its 35-URL sitemap nor its own hand-written llms.txt names an
+    API, a developer portal or a reference of any kind.
+  evidence:
+  - url: https://businessleadsworld.com/llms.txt
+    status: 200
+  - url: https://businessleadsworld.com/sitemap.xml
+    status: 200
+  - url: https://businessleadsworld.com/openapi.json
+    status: 200
+  - url: https://businessleadsworld.com/.well-known/agent-card.json
+    status: 200
+  - url: https://api.expertdesignhub.com/blw/openapi.json
+    status: 404
+  checked: '2026-09-05'
