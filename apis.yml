@@ -25,7 +25,7 @@ tags:
 - Business Lending
 - B2B Data
 - Marketing
-- Financial-Services
+- Financial Services
 tags_raw:
 - Company
 - Lead Generation
@@ -34,6 +34,7 @@ tags_raw:
 - B2B Data
 - Marketing
 - Financial Services
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
