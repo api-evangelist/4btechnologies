@@ -64,5 +64,97 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Business Leads World is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/4btechnologies
+Business Leads World is a US lead-generation and B2B data company serving the alternative business-finance market. Operating since 2016 from Queens, New York, it supplies merchant cash advance (MCA) and business loan leads to lenders, ISOs, funding companies and loan brokers — MCA live-transfer calls, call-back leads, aged MCA leads, business loan leads, digital marketing leads and B2B email data. Leads are sourced through SEO, PPC and email marketing and pre-qualified against published criteria (credit score above 550, no bankruptcies, at least one year in business, and monthly bank deposits above $15,000). The company sells lead lists through a self-service storefront on its own website; it publishes no public developer program, API reference or machine-readable API contract.
+
+**Areas:** Company · Lead Generation · Merchant Cash Advance · Business Lending · B2B Data · Marketing · Financial Services
+
+## Business Leads World on APIs.io
+
+Everything profiled for Business Leads World is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/4btechnologies/](https://apis.io/providers/4btechnologies/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [4Btechnologies Domain Security](https://apis.io/security/4btechnologies/4btechnologies-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [4Btechnologies Plans Pricing](https://apis.io/plans/4btechnologies/4btechnologies-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [4Btechnologies Rate Limits](https://apis.io/rate-limits/4btechnologies/4btechnologies-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://businessleadsworld.com/)
+- [Pricing](https://businessleadsworld.com/pricing/)
+- [Sign up](https://businessleadsworld.com/register/)
+- [Support](https://businessleadsworld.com/contact/)
+- [Blog](https://businessleadsworld.com/blogs/)
+- [Terms of service](https://businessleadsworld.com/terms-of-service/)
+- [Privacy policy](https://businessleadsworld.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 4.4** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 51.8 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 6.6 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.4** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/4btechnologies/](https://apis.io/providers/4btechnologies/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Business Leads World: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/4btechnologies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
